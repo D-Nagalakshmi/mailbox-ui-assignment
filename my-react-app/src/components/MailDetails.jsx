@@ -2,6 +2,7 @@
 import { LuPaperclip } from "react-icons/lu";
 import { IoSend } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
+import { IoMdAttach } from "react-icons/io";
 
 import image1 from "../assets/attachment1.png";
 import image2 from "../assets/attachment2.png";
@@ -78,13 +79,14 @@ export default function MailDetails({ mail }) {
             </h1>
 
             {/* Message */}
-            <p className="mt-1 text-gray-500 leading-8 ml-16">
-                {mail.message}
+            <p className="mt-1 text-gray-500  ml-16 text-sm">
+                {mail.fullmessage}
             </p>
 
             {/* Attachments */}
-            <div className="flex ml-16 items-center gap-2 mt-8 text-cyan-500">
-                <LuPaperclip />
+            <div className="flex ml-16 items-center gap-2 mt-7 text-cyan-500">
+                <IoMdAttach />
+
                 <span>4 Attachments</span>
             </div>
 

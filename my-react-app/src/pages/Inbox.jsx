@@ -22,7 +22,6 @@ import { emails } from "../data/emails";
 
 export default function Inbox({ search, setSearch }) {
     const [selectedMail, setSelectedMail] = useState(emails[0]);
-
     return (
         <div className="flex flex-1">
             <MailList

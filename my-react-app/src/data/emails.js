@@ -18,9 +18,13 @@ export const emails = [
         day: "Today",
         message:
             "Stop wasting time looking for files buried in folders. Visually organize.",
+        fullmessage:
+            "It's always a pleasure to have you at all my birthday parties. Thank you for being part of my celebrations. Your presence means a lot to me, and I hope we continue creating wonderful memories together.",
         avatar: person,
-        attachments: [image1, image2, image3, image4],
+
     },
+
+
 
     {
         id: 2,
@@ -31,6 +35,8 @@ export const emails = [
         day: "Yesterday",
         message:
             "It's always a pleasure to have you at all my birthday parties.",
+        fullmessage:
+            "It's always a pleasure to have you at all my birthday parties. Thank you for being part of my celebrations. Your presence means a lot to me, and I hope we continue creating wonderful memories together.",
         avatar: person1,
     },
 
@@ -44,6 +50,8 @@ export const emails = [
         message:
             "If you want to set up an assignment with additional reviews.",
         avatar: person2,
+        fullmessage:
+            "If you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsStop wasting time looking for files buried in folders. Visually organize.",
         attachments: [image2, image3, image1, image4],
     },
 
@@ -57,6 +65,8 @@ export const emails = [
         message:
             "The latest project updates have been completed successfully. Please review the attached.",
         avatar: person2,
+        fullmessage:
+            "If you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsIf you want to set up an assignment with additional reviewsStop wasting time looking for files buried in folders. Visually organize.",
         attachments: [image3, image4, image2, image1],
     },
 ];

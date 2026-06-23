@@ -45,12 +45,19 @@ const menuItems = [
 export default function Sidebar({ closeMenu }) {
     return (
         <aside className="w-[270px] h-full bg-[#F5F8FA] shadow-xl overflow-y-auto">
-            <button
+            {/* <button
                 onClick={closeMenu}
-                className="absolute top-4 right-4 lg:hidden"
+                className="absolute  right-4 lg:hidden"
             >
                 <IoClose size={28} />
-            </button>
+            </button> */}
+            <div className="flex justify-end p-3 lg:hidden">
+                <button onClick={closeMenu}>
+                    <IoClose size={24} />
+                </button>
+            </div>
+
+
 
             {/* Profile */}
             <div className="p-8">
@@ -80,6 +87,7 @@ export default function Sidebar({ closeMenu }) {
                         key={path}
                         to={path}
                         end={path === "/"}
+                        onClick={closeMenu}
                         className={({ isActive }) =>
                             `flex items-center justify-between px-8 py-4 border-l-[7px] transition-all ${isActive
                                 ? "bg-white border-[#1FB5EB] font-bold"
@@ -100,7 +108,7 @@ export default function Sidebar({ closeMenu }) {
                                 </div>
 
                                 {count && (
-                                    <span className="bg-red-400 text-white text-sm px-4 py-0.5 rounded-full">
+                                    <span className="bg-red-400 text-white text-sm px-4 py-0.5 font-light rounded-full">
                                         {count}
                                     </span>
                                 )}
