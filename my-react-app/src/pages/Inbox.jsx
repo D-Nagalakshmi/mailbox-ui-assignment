@@ -1,20 +1,5 @@
 
 
-// import MailList from "../components/MailList";
-// import MailDetails from "../components/MailDetails";
-
-// export default function Inbox() {
-//     return (
-//         <div className="flex flex-1">
-//             <MailList />
-
-//             <div className="hidden md:block flex-1">
-//                 <MailDetails />
-//             </div>
-//         </div>
-//     );
-// }
-
 import { useState } from "react";
 import MailList from "../components/MailList";
 import MailDetails from "../components/MailDetails";

@@ -18,7 +18,6 @@ export default function MailList({
             mail.message.toLowerCase().includes(search.toLowerCase())
     );
     return (
-        // <div className="w-[440px] p-5 bg-[#f9faf58c] overflow-y-auto">
         <div className="w-full lg:w-[440px] p-4 md:p-5 bg-[#f9faf58c] overflow-y-auto">
             <div className="relative mb-6">
                 <GoSearch
@@ -36,6 +35,7 @@ export default function MailList({
 
             <div className="space-y-5">
                 {filteredEmails.map((mail) => (
+
                     <div
                         key={mail.id}
                         onClick={() => setSelectedMail(mail)}
